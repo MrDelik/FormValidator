@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FormValidator exemple</title>
+    <script type="module" src="example.js" defer></script>
+</head>
+<body>
+<main>
+    <section>
+        <h1>Classic validation form</h1>
+        <form action="/" method="POST">
+            <div class="input-container">
+                <label for="classicTestInput">Test some text Value</label>
+                <input type="text" id="classicTestInput" placeholder="Put some value here or leave if empty" maxlength="5" required>
+                <div class="feedback">
+                    <span class="text"></span>
+                </div>
+            </div>
+            <button type="submit">
+                Send the form
+            </button>
+        </form>
+
+        <h1>FormValidator exemple</h1>
+        <form action="/" id="testForm" method="POST" novalidate>
+            <div class="input-container">
+                <label for="testInput">Test some text Value</label>
+                <input type="text" id="testInput" placeholder="Put some value here or leave if empty" maxlength="5" required>
+                <div class="feedback">
+                    <span class="text"></span>
+                </div>
+            </div>
+            <button type="submit">
+                Send the form
+            </button>
+        </form>
+    </section>
+</main>
+</body>
+</html>
